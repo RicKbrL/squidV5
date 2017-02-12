@@ -38,7 +38,7 @@ http_access allow local
 http_access deny all
 visible_hostname RickUX' >> /usr/etc/squid.conf
 echo -e "\033[1;37m Criando usuario squid..\033[0m"
-useradd -s /bin/false >/dev/null 2>/dev/null
+useradd -s /bin/false squid >/dev/null 2>/dev/null
 mkdir /usr/var/cache /usr/var/logs >/dev/null 2>/dev/null
 chown -R squid. /usr/var/cache /usr/var/logs
 echo -e "\033[1;37m Inciando serviço do squid V5"
