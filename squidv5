@@ -1,4 +1,7 @@
 #!/bin/bash
+cd
+rm squidv5.tar.gz 1>/dev/null 2>/dev/null
+rm -r squid-5.0.0-20170209-r15039 >/dev/null 2>/dev/null
 read -p "Digite seu ip: " ip
 clear
 rm /usr/sbin/squid >/dev/null 2>/dev/null
