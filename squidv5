@@ -41,6 +41,7 @@ echo -e "\033[1;37m Criando usuario squid..\033[0m"
 useradd -s /bin/false squid >/dev/null 2>/dev/null
 mkdir /usr/var/cache /usr/var/logs >/dev/null 2>/dev/null
 chown -R squid. /usr/var/cache /usr/var/logs
+echo localhost >> /usr/etc/payloads
 echo -e "\033[1;37m Inciando serviço do squid V5"
 /usr/sbin/squid
 /usr/sbin/squid -z >/dev/null 2>/dev/null
