@@ -6,9 +6,9 @@ echo -e "\033[1;37m Instalando gcc curl e atualizando repositorios... \033[00m"
 apt-get update >/dev/null 2>/dev/null
 apt-get install curl -y >/dev/null 2>/dev/null
 apt-get install gcc -y >/dev/null 2>/dev/null
-curl -o squidv5.tar.gz -C - http://www.squid-cache.org/Versions/v5/squid-5.0.0-20170212-r15042.tar.gz --silent
+curl -o squidv5.tar.gz -C - http://www.squid-cache.org/Versions/v5/squid-5.0.0-20170209-r15039.tar.gz --silent
 tar -xf squidv5.tar.gz
-cd squid-5.0.0-20170212-r15042/
+cd squid-5.0.0-20170209-r15039/
 echo -e "\033[1;37m Preparando arquivos e configurações para compilação (Make)\033[0m"
 ./configure --prefix=/usr --enable-shared --enable-icmp --enable-delay-pools --enable-sll --enable-linux-netfilter --enable-basic-auth-helpers=NCSA,LDAP,SMB >/dev/null 2>/dev/null
 echo -e "\033[1;31m Compilando o Squid V5 \033[1;37m(Demora bastante)\033[0m"
