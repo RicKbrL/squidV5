@@ -6,8 +6,9 @@ rm -r squid-5.0.0-20170209-r15039 >/dev/null 2>/dev/null
 read -p "Digite seu ip: " ip
 clear
 rm /usr/sbin/squid >/dev/null 2>/dev/null
-echo -e "\033[1;37m Instalando gcc perl g++ curl e atualizando repositorios... \033[00m"
+echo -e "\033[1;37m Instalando gcc make perl g++ curl e atualizando repositorios... \033[00m"
 apt-get update >/dev/null 2>/dev/null
+apt-get install make -y >/dev/null 2>/dev/null
 apt-get install curl -y >/dev/null 2>/dev/null
 apt-get install gcc -y >/dev/null 2>/dev/null
 apt-get install g++ -y >/dev/null 2>/dev/null
