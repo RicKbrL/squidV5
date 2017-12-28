@@ -40,7 +40,7 @@ acl local dstdomain localhost
 acl local dstdomain 127.0.0.1
 http_access allow local
 http_access deny all
-visible_hostname RickUX' >> /usr/etc/squid.conf
+visible_hostname squid' >> /usr/etc/squid.conf
 echo -e "\033[1;37m Criando usuario squid..\033[0m"
 useradd -s /bin/false squid >/dev/null 2>/dev/null
 mkdir /usr/var/cache /usr/var/logs >/dev/null 2>/dev/null
